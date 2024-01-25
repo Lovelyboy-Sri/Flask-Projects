@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Processing</title>
+</head>
+<body>
+    <center><b><h3>This is the data gathering page !</h3></b>
+        <form method="POST" action="{{url_for('ans')}}">
+            <label >Val1 :</label>
+            <input type="text" name="Data1" required><br><br>
+
+            <label>Val2 :</label>
+            <input type="text" name="Data2" required><br><br>
+
+            <input type="submit" value="Update">
+            <!-- <a href="{{url_for('ans')}}"></a><button type="submit">Update</button> -->
+        </form>
+    </center>
+</body>
+</html>
