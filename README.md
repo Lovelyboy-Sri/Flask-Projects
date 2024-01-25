@@ -1,7 +1,8 @@
 # Flask-Projects
 
-This repository is used to showcase my all the flask based on the projects 
+This repository is used to showcase all the flasks based on the projects 
 
 ## Now available projects are 
-> Smartipie - QR Codegenerator project
-> Dd Calculation - Dd Calculator project ( here Dict is used to act as an Data Base )
+> Smartipie - QR Code generator project
+> 
+> Dd Calculation - Dd Calculator project ( here Dict is used to act as a Data Base )
