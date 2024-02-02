@@ -4,7 +4,7 @@ import re
 app = Flask(__name__)
 
 def is_sanitized(input_string):
-    sanitized = not re.search(r"[;\\-'\"]", input_string)
+    sanitized = not re.search(r"[;\\'\"]|\\-", input_string)
     return sanitized
 
 @app.route('/v1/sanitized/input/', methods=['POST'])
