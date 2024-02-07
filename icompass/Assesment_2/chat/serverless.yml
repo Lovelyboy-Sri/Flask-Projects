@@ -1,0 +1,25 @@
+service: flask-crud-api
+
+provider:
+  name: aws
+  runtime: python3.12
+  stage: dev
+  region: us-east-1
+
+functions:
+  app:
+    handler: app.handler
+    events:
+      - http:
+          path: /
+          method: ANY
+      - http:
+          path: /{proxy+}
+          method: ANY
+
+plugins:
+  - serverless-python-requirements
+
+custom:
+  pythonRequirements:
+    dockerizePip: true
